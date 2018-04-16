@@ -1,0 +1,611 @@
+.add-profile-root-frame {
+
+  position: absolute;
+  height: 1000px;
+  width: 100%;
+  background-color: gray;
+
+}
+
+.base-bg {
+
+  background-color: #e3f2fd;
+
+}
+
+div, p, img, span {
+
+  padding: 0px;
+  margin: 0px;
+  border: 0px dashed powderblue;
+
+}
+
+button {
+
+  border: 1px solid cadetblue;
+  border-radius: 3px;
+  background: linear-gradient(limegreen, mediumseagreen);
+  color: white;
+  font-weight: bold;
+  font-family: "Microsoft YaHei UI";
+  width: 100px;
+  height: 30px;
+
+}
+
+button:hover {
+
+  border: 0px solid cadetblue;
+  border-radius: 3px;
+  background: limegreen;
+  color: #fcf8e3;
+  font-weight: bold;
+  font-family: "Microsoft YaHei UI";
+  width: 100px;
+  height: 30px;
+
+}
+
+button:active {
+
+  border: 0px solid cadetblue;
+  border-radius: 3px;
+  background: linear-gradient(seagreen, darkgreen);
+  color: #fcf8e3;
+  font-weight: bold;
+  font-family: "Microsoft YaHei UI";
+  width: 100px;
+  height: 30px;
+
+}
+
+.main-con {
+
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  z-index: 1;
+
+}
+
+.top-bar {
+
+  width: 100%;
+  height: 50px;
+  padding: 0px;
+  margin: 0px;
+
+}
+
+.col {
+
+  height: 100%;
+  padding: 0px 15px 0px 15px;
+
+}
+
+.col2 {
+
+  background-color: rgba(255, 255, 255, 1);
+
+}
+
+.content {
+
+  width: 100%;
+  height: 1200px;
+  padding: 0px;
+  margin: 0px;
+
+}
+
+.txt-tl {
+
+  font-size: 25px;
+  font-family: "Helvetica Neue";
+  font-weight: 600;
+  line-height: 70px;
+  width: 100%;
+  height: 70px;
+  color: #9d9d9d;
+  border-bottom: 1px solid #f0f0f0;
+
+}
+
+.inner-con {
+
+  width: 100%;
+  padding: 0px 15px 0px 15px;
+
+}
+
+.user-info {
+
+  height: 750px;
+  padding: 0px;
+
+}
+
+.user-info-pic {
+
+  height: 400px;
+  padding: 0px;
+
+}
+
+.p-l0 {
+
+  padding-left: 0px;
+
+}
+
+.m-t15 {
+
+  margin-top: 15px;
+
+}
+
+.m-l0 {
+
+  margin-left: 0px;
+
+}
+
+.p-head {
+
+  float: left;
+  font-size: 15px;
+  font-family: "Helvetica Neue";
+  line-height: 20px;
+  width: 100%;
+  height: 20px;
+  margin-top: 10px;
+  color: #3c3c3c;
+
+}
+
+.p-title {
+
+  float: left;
+  font-size: 25px;
+  font-family: "Microsoft YaHei UI Light";
+  font-weight: normal;
+  line-height: 70px;
+  width: 100%;
+  height: 70px;
+  color: #3c3c3c;
+  border-bottom: 1px solid #f0f0f0;
+
+}
+
+.input-text {
+
+  float: left;
+  border: none;
+  background-color: #f5fafe;
+  border-radius: 3px;
+  border: 1px solid #c0c0c0;
+  width: 65%;
+  max-width: 70%;
+  height: 30px;
+  margin-top: 10px;
+
+}
+
+.intpu-enname {
+
+  width: 100%;
+  max-width: 100%;
+
+}
+
+.input-enryear {
+
+  width: 30%;
+  max-width: 100%;
+
+}
+
+.name-con {
+
+  float: left;
+  width: 30%;
+  height: 70px;
+
+}
+
+.name-gap {
+
+  width: 5%;
+
+}
+
+.input-textarea {
+
+  height: 60px;
+  padding: 5px;
+  font-family: "Microsoft YaHei UI Light";
+
+}
+
+.pos-con {
+
+  float: left;
+  border: none;
+  border-radius: 3px;
+  border: 1px dashed rgba(0, 0,0, 0.05);
+  width:65%;
+  max-width: 65%;
+  min-width: 380px;
+  height: 50px;
+  margin-top: 10px;
+
+}
+
+.save-btn-con {
+
+  float: left;
+  border: none;
+  width: 100%;
+  max-width: 100%;
+  height: 30px;
+  margin-top: 15px;
+
+}
+
+.pos-con ul {
+
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+
+}
+
+.pos-con li {
+
+  float: left;
+  width: 20%;
+  height: 50px;
+  margin-right: 18px;
+
+}
+
+.pos-con li input {
+
+  float: left;
+  width: 25%;
+  height: 43px;
+
+
+}
+
+.pos-con li p {
+
+  float: left;
+  width: 50%;
+  line-height: 43px;
+  height: 43px;
+  margin-left: 5px;
+  font-family: "Helvetica Neue";
+  font-size: 15px;
+  color: #3c3c3c;
+
+}
+
+.img-fm {
+
+  float: left;
+  width: 100%;
+  height: 290px;
+  border:1px dashed rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0.00);
+  overflow: hidden;
+
+}
+
+.img-fm img {
+
+  width: 100%;
+  border: 1px dashed rgba(0, 0, 0, 0.05);
+  z-index: 2;
+
+}
+
+.update-avatar-ban {
+
+  position: absolute;
+  top: 290px;
+  height: 40px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 3;
+  border:1px dashed rgba(0, 0, 0, 0.05);
+  border-width: thin;
+  cursor: pointer;
+  overflow: hidden;
+
+}
+
+.update-avatar-ban p {
+
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  bottom: 0px;
+  font-family: "Microsoft YaHei UI";
+  font-size: 13px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  z-index: 2;
+
+}
+
+.update-avatar-ban div {
+
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 0%;
+  height: 40px;
+  background-color: rgba(0, 225, 0, 0.7);
+  z-index: 1;
+
+}
+
+.paper-list {
+
+  float: left;
+  width: 100%;
+  height: 100%;
+  border-top: 0px solid #f0f0f0;
+
+}
+
+.p-edit {
+
+  float: left;
+  height: 30px;
+  width: 50%;
+
+}
+
+.p-edit input {
+
+  width: 15px;
+  height: 15px;
+  margin-top: 8px;
+
+}
+
+.p-add {
+
+  float: left;
+  height: 30px;
+  width: 50%;
+
+}
+
+.p-add p {
+
+  position: absolute;
+  right: 15px;
+  width: 45px;
+  height: 30px;
+  line-height: 30px;
+  text-align: right;
+  font-size: 20px;
+  color: cornflowerblue;
+  font-family: Verdana;
+  font-weight: lighter;
+  cursor: pointer;
+
+}
+
+.add-area {
+
+  float: left;
+  margin-top: 10px;
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+
+}
+
+.add-area textarea {
+
+  float: left;
+  border: none;
+  background-color: #f5fafe;
+  border-radius: 3px;
+  border: 1px solid #c0c0c0;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100px;
+  min-width: 100%;
+  min-height: 100px;
+  margin-top: 10px;
+
+}
+
+.add-area-button {
+
+  float: left;
+  width: 5%;
+  height: 30px;
+  margin: 10px 0px 0px 10px;
+  background-image: none;
+
+}
+
+.add-area img {
+
+  float: left;
+  width: 28px;
+  height: 28px;
+  margin-top: 10px;
+  cursor: pointer;
+
+}
+
+.add-area .paper-url {
+
+  float:left;
+  height: 30px;
+  width: 60%;
+  margin: 10px 0px 0px 0px;
+  font-size:12px;
+  font-family: "Microsoft YaHei UI";
+  font-weight: 500;
+  line-height: 30px;
+  color:rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border: 1px dashed rgba(0, 0,0, 0.05);
+  border-radius: 3px;
+  cursor: pointer;
+  padding-left: 5px;
+
+}
+
+.add-area .save-con {
+
+  float:left;
+  width: 100%;
+
+}
+
+.list {
+
+  float: left;
+  margin-top: 10px;
+  width: 100%;
+  height: 100%;
+
+}
+
+.list-btm {
+
+  float: left;
+  margin-top: 10px;
+  width: 100%;
+  height: 80px;
+
+}
+
+.list-item {
+
+  float: left;
+  width: 100%;
+  height: 80px;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+
+}
+
+.list-item input {
+
+  float: left;
+  width: 15px;
+  height: 15px;
+  margin-top: 33px;
+
+}
+
+.list-item img {
+
+  float: left;
+  margin-left: 20px;
+  width: 26px;
+  height: 26px;
+  margin-top: 27px;
+
+}
+
+.list-item p.t {
+
+  float: left;
+  margin-top: 15px;
+  margin-left: 15px;
+  width: 25%;
+  height: 50px;
+  line-height: 50px;
+  font-family: "Microsoft YaHei UI";
+  color: royalblue;
+  font-size: 13px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+}
+
+.list-item-file0, .list-item-file1 {
+
+  float:left;
+  height: 30px;
+  width: 12%;
+  margin: 25px 0px 5px 0px;
+  font-size:12px;
+  font-family: "Microsoft YaHei UI";
+  line-height: 30px;
+  color:rgba(0, 0, 0, 0.5);
+  border: 1px dashed rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border-radius: 3px;
+  cursor: pointer;
+  padding-left: 5px;
+
+}
+
+.list-item-del {
+
+  position: absolute;
+  margin-top: 15px;
+  right: 15px;
+  width: 45px;
+  height: 50px;
+  line-height: 50px;
+  text-align: right;
+  font-size: 40px;
+  color: indianred;
+  font-family: "Microsoft YaHei UI";
+  cursor: pointer;
+
+}
+
+.list-item-time {
+
+  position: absolute;
+  margin-top: 15px;
+  right: 70px;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  text-align: right;
+  font-size: 13px;
+  color: #5e5e5e;
+  font-family: "Microsoft YaHei UI";
+
+}
+
+
+.cropper-con, .loading-con {
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 3;
+
+}
+
+

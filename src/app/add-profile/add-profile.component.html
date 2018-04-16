@@ -1,0 +1,220 @@
+<div id="mainCon" class="container-fluid main-con">
+
+  <div class="row justify-content-center content">
+
+    <div class="col-xs-12 col-md-offset-3 col-md-6 col col2">
+
+      <div class="container inner-con">
+
+        <div class="row">
+
+          <p class="txt-tl">Profile</p>
+
+        </div>
+
+        <div class="row">
+
+          <div class="col-xs-12 col-md-8 user-info">
+
+            <!--<p class="p-head">fistName</p>
+
+            <input type="text" class="input-text intpu-enname" id="firstName"/>
+
+            <p class="p-head">lastName</p>
+
+            <input type="text" class="input-text intpu-enname" id="lastName"/>-->
+
+            <div class="name-con">
+
+              <p class="p-head">firstName</p>
+
+              <input [(ngModel)]="MemberObj.firstName" type="text" class="input-text intpu-enname" id="fName"/>
+
+            </div>
+            <div class="name-con name-gap"></div>
+            <div class="name-con">
+
+              <p class="p-head">lastName</p>
+
+              <input [(ngModel)]="MemberObj.lastName" type="text" class="input-text intpu-enname" id="lName"/>
+
+            </div>
+
+            <p class="p-head">chineseName</p>
+
+            <input [(ngModel)]="MemberObj.chineseName" type="text" class="input-text input-enryear" id="chnName"/>
+
+            <p class="p-head">enrolledYear</p>
+
+            <input [(ngModel)]="MemberObj.enrolledYear" type="text" class="input-text input-enryear" id="enrYear"/>
+
+            <p class="p-head">brief</p>
+
+            <input [(ngModel)]="MemberObj.brief" type="text" class="input-text input-enryear" id="brf"/>
+
+            <p class="p-head">introduction</p>
+
+            <textarea [(ngModel)]="MemberObj.introduction" class="input-text input-textarea" id="intro"></textarea>
+
+            <p class="p-head">email</p>
+
+            <input [(ngModel)]="MemberObj.email" type="text" class="input-text" id="eml" disabled="disabled"/>
+
+            <p class="p-head">mobile</p>
+
+            <input [(ngModel)]="MemberObj.mobile" type="text" class="input-text" id="mob"/>
+
+            <p class="p-head">address</p>
+
+            <textarea [(ngModel)]="MemberObj.address" class="input-text input-textarea" id="addr"></textarea>
+
+            <p class="p-head">position</p>
+
+            <!--<textarea class="input-text input-textarea" id="bak"></textarea>-->
+
+            <div class="pos-con">
+
+              <ul>
+
+                <li><input [(ngModel)]="MemberObj.position" name="position" type="radio" value="faculty" checked/><p>faculty</p></li>
+                <li><input [(ngModel)]="MemberObj.position" name="position" type="radio" value="phd" /><p>phd</p></li>
+                <li><input [(ngModel)]="MemberObj.position" name="position" type="radio" value="master" /><p>master</p></li>
+                <li><input [(ngModel)]="MemberObj.position" name="position" type="radio" value="alumni" /><p>alumni</p></li>
+
+              </ul>
+
+            </div>
+
+            <div class="save-btn-con">
+              <button id="savePro" (click)="saveClick()">save</button>
+            </div>
+
+          </div>
+          <div class="col-xs-12 col-md-4 user-info-pic p-l">
+
+            <p class="p-head">picture</p>
+
+            <div id="imgFm" class="img-fm">
+
+              <img id="imgAva" src="#"/>
+              <div id="updateAva" class="update-avatar-ban">
+                <p>update your picture</p>
+                <div id="picProgress"></div>
+              </div>
+
+              <input id="pictureFile" class="paper-url" type="file"/>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="paper-list">
+
+            <p class="txt-tl">Publications</p>
+
+            <div class="p-edit"><input type="checkbox" id="checkAll"/></div><div class="p-add"><p id="addPaper">+</p></div>
+
+            <div id="addArea" class="add-area">
+
+              <p class="p-head">bibtex</p>
+              <textarea [(ngModel)]="bibtexInput" id="bibtexString">{{bibtexInput}}</textarea>
+              <div class="save-con">
+
+                <img src="#"/>
+                <p class="paper-url" type="text" id="selectFileTri">choose <span style="font-weight: bold">pdf</span> to upload</p>
+                <img src="#" id="delFile0"/>
+
+              </div>
+              <div class="save-con">
+
+                <img src="#"/>
+                <p class="paper-url" type="text" id="selectSliderTri">choose <span style="font-weight: bold">slides</span> to upload</p>
+                <img src="#" id="delFile1"/>
+
+              </div>
+
+              <input type="file" id="selectFile" hidden/>
+              <input type="file" id="selectSlider" hidden/>
+              <div class="save-con"><button id="saveBtn" class="m-l0 m-t15" (click)="addPubClick()">save</button></div>
+
+            </div>
+
+            <div id="paperListCon" class="list">
+
+              <div *ngFor="let pub of MemberObj.publications" class='list-item'>
+                <input type='checkbox' />
+                 <img src=''/>
+                 <p class='t'>{{pub._id}}</p>
+                 <img class='' src='' />
+                 <a href='' target='_blank'><p class='list-item-file0'></p></a>
+                 <img class='' src='' />
+                 <a href='' target='_blank'><p class='list-item-file1'></p></a>
+                 <p class='list-item-time'></p>
+                 <p class='list-item-del' (click)="delePubClick(pub._id)">-</p>
+              </div>
+
+            </div>
+
+            <div class="list-btm"></div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!--    <div class="cropper-con">
+
+        <div class="row">
+
+            <div class="col-xs-12 col-md-6">
+
+
+            </div>
+
+            <div class="col-xs-12 col-md-6">
+
+
+
+            </div>
+
+        </div>
+
+    </div>-->
+
+<div id="loadCon" class="loading-con" hidden="hidden">
+
+  <div class="row" style="padding: 0px; margin: 0px">
+
+    <div class="col-xs-12 col-md-6 col-md-offset-3">
+
+      <div class="lds-default">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

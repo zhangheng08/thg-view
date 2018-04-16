@@ -1,0 +1,16 @@
+<!--<div *ngIf="!user" id="okta-login-container"></div>
+
+<div *ngIf="user">
+  Hello {{user}}
+
+  <button (click)="logout()">Logout</button>
+
+</div>-->
+
+<div>
+
+<button *ngIf="!isAuthenticated" (click)="login()"> Login </button>
+<button *ngIf="isAuthenticated" (click)="logout()"> Logout </button>
+<router-outlet></router-outlet>
+
+</div>
