@@ -16,6 +16,7 @@ import { OktaAuthModule, OktaCallbackComponent } from '@okta/okta-angular';
 import { CommonModule } from '@angular/common';
 import { FileUploadModule } from 'ng2-file-upload';
 
+
 const config = {
   issuer: 'https://dev-568215.oktapreview.com/oauth2/default',
   redirectUri: 'http://localhost:4200/implicit/callback',

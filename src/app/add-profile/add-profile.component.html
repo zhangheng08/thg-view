@@ -96,13 +96,13 @@
 
             <div id="imgFm" class="img-fm">
 
-              <img id="imgAva" src="#"/>
-              <div id="updateAva" class="update-avatar-ban">
+              <img #imgAva id="imgAva" src="../../assets/imgs/user.jpg"/>
+              <div #updateAva id="updateAva" class="update-avatar-ban" (click)="updateAvatarClick()">
                 <p>update your picture</p>
                 <div id="picProgress"></div>
               </div>
 
-              <input id="pictureFile" class="paper-url" type="file"/>
+              <input #uploadAvaInput id="uploadAvaInput" type="file" ng2FileSelect [uploader]='uploader' (change)="uploadAvatar($event)" hidden="hidden"/>
 
             </div>
 
@@ -124,21 +124,24 @@
               <textarea [(ngModel)]="bibtexInput" id="bibtexString">{{bibtexInput}}</textarea>
               <div class="save-con">
 
-                <img src="#"/>
-                <p class="paper-url" type="text" id="selectFileTri">choose <span style="font-weight: bold">pdf</span> to upload</p>
-                <img src="#" id="delFile0"/>
+                <!--//-------------------------------modify-->
+                <img src="../../assets/imgs/pdf.png"/>
+                <p #pdfUploadBtn class="paper-url" type="text" id="selectFileTri" (click)="uploadPdfClick()">choose <span style="font-weight: bold">pdf</span> to upload</p>
+                <!--<img src="" id="delFile0"/>-->
 
               </div>
               <div class="save-con">
 
-                <img src="#"/>
-                <p class="paper-url" type="text" id="selectSliderTri">choose <span style="font-weight: bold">slides</span> to upload</p>
-                <img src="#" id="delFile1"/>
+                <!--//-------------------------------modify-->
+                <img src="../../assets/imgs/more.png"/>
+                <p #sliderUploadBtn class="paper-url" type="text" id="selectSliderTri" (click)="uploadSliderClick()">choose <span style="font-weight: bold">slides</span> to upload</p>
+                <!--<img src="" id="delFile1"/>-->
 
               </div>
 
-              <input type="file" id="selectFile" hidden/>
-              <input type="file" id="selectSlider" hidden/>
+              <!--//-------------------------------modify-->
+              <input #pdfUploadInput type="file" id="selectFile" ng2FileSelect [uploader]='uploader' (change)="uploadPdfOnChange($event)" hidden/>
+              <input #sliderUploadInput type="file" id="selectSlider" ng2FileSelect [uploader]='uploader' (change)="uploadSliderOnChanger($event)" hidden/>
               <div class="save-con"><button id="saveBtn" class="m-l0 m-t15" (click)="addPubClick()">save</button></div>
 
             </div>
@@ -148,11 +151,11 @@
               <div *ngFor="let pub of MemberObj.publications" class='list-item'>
                 <input type='checkbox' />
                  <img src=''/>
-                 <p class='t'>{{pub._id}}</p>
-                 <img class='' src='' />
-                 <a href='' target='_blank'><p class='list-item-file0'></p></a>
-                 <img class='' src='' />
-                 <a href='' target='_blank'><p class='list-item-file1'></p></a>
+                 <p class='t'>{{pub.TITLE}}</p><!--//-------------------------------modify-->
+                 <img class='' src='../../assets/imgs/pdf.png' />
+                 <a href='{{pub.pdf}}' target='_blank'><p class='list-item-file0'>{{pub.pdf.substr(pub.pdf.lastIndexOf('and') + 3)}}</p></a>
+                 <img class='' src='../../assets/imgs/more.png' />
+                 <a href='{{pub.slider}}' target='_blank'><p class='list-item-file1'>{{pub.slider.substr(pub.slider.lastIndexOf('and') + 3)}}</p></a>
                  <p class='list-item-time'></p>
                  <p class='list-item-del' (click)="delePubClick(pub._id)">-</p>
               </div>

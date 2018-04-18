@@ -1,23 +1,23 @@
 export interface Member {
 
-  _id: String,
-  active: Boolean,
-  address: String,
-  avatar:String,
-  brief:String,
-  chineseName:String,
-  cv:String,
-  email:String,
-  enrolledYear:String,
-  firstName:String,
-  introduction:String,
-  lastName:String,
-  mobile:String,
-  name:String,
-  position:String,
-  publications:[
+  _id: string;
+  active: boolean;
+  address: string;
+  avatar: string;
+  brief: string;
+  chineseName: string;
+  cv: string;
+  email: string;
+  enrolledYear: string;
+  firstName: string;
+  introduction: string;
+  lastName: string;
+  mobile: string;
+  name: string;
+  position: string;
+  publications: [
     {
-      json:Object
-    }]
+      json: object
+    }];
 
 }
